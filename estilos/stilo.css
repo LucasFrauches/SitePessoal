@@ -1,0 +1,58 @@
+/* estilo.css */
+
+body {
+    background-color: #6ac2ce;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #ced83d;
+    font-family: cursive;
+}
+
+.subtitulo {
+    color: #ced83d;
+    font-family: cursive;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #444;
+    margin-top: 20px;
+}
+
+h2:nth-of-type(2) {
+    color: #b141dd; /* aplica no segundo h2 (Motivação para estudar) */
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+address {
+    margin-top: 30px;
+    font-style: normal;
+    font-size: 0.9em;
+    color: #222;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
