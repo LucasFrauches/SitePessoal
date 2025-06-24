@@ -1,7 +1,6 @@
 /* estilo.css */
 
 body {
-    background-color: #6ac2ce;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
     color: #333;
@@ -24,7 +23,7 @@ h2 {
 }
 
 h2:nth-of-type(2) {
-    color: #b141dd; /* aplica no segundo h2 (Motivação para estudar) */
+    color: #b141dd;
 }
 
 p {
@@ -38,14 +37,24 @@ img {
     margin-bottom: 20px;
 }
 
-a {
-    color: #003366;
+/* pseudoclasses para os links*/
+a:link {
+    color: blue;
     text-decoration: none;
     font-weight: bold;
 }
 
+a:visited {
+    color: purple;
+}
+
 a:hover {
+    color: red;
     text-decoration: underline;
+}
+
+a:active {
+    color: orange;
 }
 
 address {
