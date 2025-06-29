@@ -1,88 +1,104 @@
-/* Reset básico */
+/* Reset e estrutura básica */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
-    padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+
+  /* Fundo com logo do IFES */
+  background-image: url('imagens/logoSerra.png');
+  background-attachment: fixed;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 120px;
 }
 
+/* Título e subtítulo */
 h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .subtitulo {
-    text-align: center;
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
 }
 
+/* Galeria de cards */
 .container-galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
+/* Card individual */
 .card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    padding: 15px;
+  background-image: url('imagens/textura.png'); 
+  background-repeat: repeat;
+  background-size: auto;
+
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 15px;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .card h2 {
-    font-size: 1.1em;
-    margin-top: 10px;
-    color: #444;
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #444;
 }
 
 .card p {
-    font-size: 0.95em;
-    color: #666;
-    margin-top: 5px;
+  font-size: 0.95em;
+  color: #666;
+  margin-top: 5px;
 }
 
+/* Seção com links*/
 .link-section {
-    text-align: center;
-    margin: 40px 0;
+  text-align: center;
+  margin: 40px 0;
 }
 
 .link-section a {
-    font-weight: bold;
-    color: #0066cc;
-    text-decoration: none;
-    font-size: 1em;
+  font-weight: bold;
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .link-section a:hover {
-    color: #dd4a4a;
+  color: #dd4a4a;
 }
 
+/* Rodapé */
 address {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 0.9em;
-    color: #444;
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #444;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
 }
