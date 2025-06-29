@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container-linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+.perfil, .preferencias {
+  background: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.perfil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid red;
+}
+
+.contato {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contato p, .contato a {
+  color: #333;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.contato a:hover {
+  color: #0066cc;
+}
+
+.preferencias h2 {
+  margin-bottom: 10px;
+  color: red;
+}
+
+.preferencias p {
+  font-size: 0.95em;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.bloco {
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.8em;
+  color: red;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  color: red;
+}
+
+ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
