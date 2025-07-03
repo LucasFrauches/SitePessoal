@@ -1,92 +1,93 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Uma página sobre mim">
-    <meta name="author" content="Lucas-IFES">
-    <meta name="keywords" content="html,ifes,progweb,aluno,alunodoifes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Uma página sobre mim">
+  <meta name="author" content="Lucas-IFES">
+  <meta name="keywords" content="html,ifes,progweb,aluno,alunodoifes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="imagens/logoSerra.png">
-    <link rel="stylesheet" href="estilos/stilo.css"> 
-
-    <title>Lucas Henrique</title>
+  <link rel="icon" type="image/png" href="imagens/logoSerra.png">
+  <link rel="stylesheet" href="estilos/stilo.css"> 
+  <title>Lucas Henrique</title>
 </head>
 
 <body>
-  <h1>Lucas Henrique</h1>
-  
-  
-    <header>
-      <nav>
-          <a href="#section1">Início</a>
-          <a href="#section2">minha instituição</a>
-          <a href="#">cada seção da pagina (h2) </a>
-          <a href="#">Contato</a>
-      </nav>
-      <img src="logoSerra.png" alt="Logo IFES">
+  <header>
+    <h1>Lucas Henrique</h1>
+    <img src="imagens/logoSerra.png" alt="Logo IFES">
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#instituicao">Minha Instituição</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
-  <div class="layout">
-      <aside>
-          <nav class="nav-aside">
-              <a href="">Tutorial</a>
-              <a href="">Ifes</a>
-              <a href="">Curriculo</a>
-          </nav>
-      </aside>
-      <main>
-          <section id="section1">
-              <img src="avatar.png" alt="avatar">
-              <div>
-                  <p>quem é você</p>
-              </div>
-          </section>
-          <section id="section2">
-              <h2>Minha instituição</h2>
-              <p>prossiga o que já fez, só que dividindo em section</p>
-          </section>
-      </main>
-  </div>
 
-
-
-
-  <p class="subtitulo">A história do aluno de IoT</p>
-
-  <div class="container-galeria">
-
-    <div class="card">
+  <main>
+    <section id="inicio">
       <img src="imagens/AvatarMaker.png" alt="Avatar Lucas">
-      <h2>Sobre mim</h2>
-      <p>Aluno do IFES apaixonado por tecnologia, futebol e artes marciais.</p>
-    </div>
+      <p>QUEM SOU EU ?</p>
+    </section>
 
-    <div class="card">
-      <img src="imagens/serra.png" alt="Campus Serra">
+    <section id="instituicao">
       <h2>Minha Instituição</h2>
-      <p>Estudo no <a href="https://serra.ifes.edu.br/" target="_blank">IFES - Campus Serra</a></p>
-    </div>
+      <p>Estudo no IFES - Campus Serra e valorizo muito o ensino técnico e a inovação tecnológica.</p>
+    </section>
 
-    <div class="card">
-      <img src="imagens/violao.jpg" alt="Violão">
-      <h2>Hobbies</h2>
-      <p>Andar de bike, tocar violão, ler, lutar jiu-jitsu e colecionar cartões postais.</p>
-    </div>
+   
 
-    <div class="card">
-      <h2>Motivação</h2>
-      <p>Me inspiro em familiares que se formaram e venceram pela educação.</p>
-    </div>
+    <section id="galeria">
+      <h2>A história do aluno de IoT</h2>
+      <div class="container-galeria">
 
-  </div>
+        <!--<div class="card"> 
+          <img src="imagens/AvatarMaker.png" alt="Avatar Lucas">
+          <h3>Sobre mim</h3>
+          <p>Aluno do IFES apaixonado por tecnologia, futebol e artes marciais.</p>
+        </div> -->
 
-  <div class="link-section">
-    <p><a href="curriculos/index.html">→ Acesse meu currículo</a></p>
-    <p><a href="tutorial/index.html">→ Tutorial HTML</a></p>
-  </div>
+        <div class="card">
+          <img src="imagens/serra.png" alt="Campus Serra">
+          <h3>Minha Instituição</h3>
+          <p><a href="https://serra.ifes.edu.br/" target="_blank">IFES - Campus Serra</a></p>
+        </div>
+
+        <div class="card">
+          <img src="imagens/violao.jpg" alt="Violão">
+          <h3>Hobbies</h3>
+          <p>Andar de bike, tocar violão, ler, lutar jiu-jitsu e colecionar cartões postais.</p>
+        </div>
+
+        <div class="card">
+          <h3>Motivação</h3>
+          <p>Me inspiro em familiares que se formaram e venceram pela educação.</p>
+        </div>
+
+      </div>
+
+       <aside>
+      <nav>
+        <a href="tutorial/index.html">Tutorial</a>
+        <a href="https://serra.ifes.edu.br/" target="_blank">IFES</a>
+        <a href="curriculos/index.html">Currículo</a>
+      </nav>
+    </aside>
+
+    </section>
+
+    
+
+    <section id="contato">
+      <nav>
+        <a href="curriculos/index.html">→ Acesse meu currículo</a>
+        <a href="tutorial/index.html">→ Tutorial HTML</a>
+      </nav>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy;2025 Lucas Henrique. Todos os direitos reservados - orientação: prof. Jonathan Toczek</p> 
-</footer>
-
+    <p>&copy;2025 Lucas Henrique. Todos os direitos reservados - orientação: prof. Jonathan Toczek</p>
+  </footer>
 </body>
+</html>

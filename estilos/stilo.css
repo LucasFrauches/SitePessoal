@@ -1,4 +1,8 @@
-/* Reset e estrutura básica */
+/* ==== Configuração global ==== */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,147 +10,180 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  background: url("imagens/textura.png") repeat;
   color: #333;
-  line-height: 1.6;
-  padding: 40px 20px;
-
-  /* Fundo com logo do IFES */
-  background-image: url('imagens/logoSerra.png');
-  background-attachment: fixed;
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 120px;
+  padding-left: 240px; /* espaço do menu lateral */
 }
 
-/* Título e subtítulo */
+/* Cabeçalho lateral*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* menu lateral */
+header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+header nav a {
+  display: block;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+ /* transition: background 0.2s, transform 0.2s, color 0.2s;*/
+}
+
+header nav a:hover {
+  background-color: #f0f0f0;
+  color: #dd4a4a;
+  transform: scale(1.05);
+}
+
+/* Título */
 h1 {
   text-align: center;
   font-size: 2.5em;
   color: #333;
-  margin-bottom: 10px;
+  margin: 40px 0 10px;
 }
 
+/* ==== Subtítulo ==== */
 .subtitulo {
   text-align: center;
-  font-size: 1.2em;
-  color: #666;
-  margin-bottom: 40px;
+  font-size: 1.8em;
+  margin: 40px 0 20px;
+  color: #444;
 }
 
-/* Galeria de cards */
+/* ==== Galeria de Cards ==== */
 .container-galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Card individual */
 .card {
-  background-image: url('imagens/textura.png'); 
-  background-repeat: repeat;
-  background-size: auto;
-
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
 
 .card h2 {
-  font-size: 1.1em;
-  margin-top: 10px;
-  color: #444;
+  color: #0066cc;
+  margin-bottom: 10px;
 }
 
 .card p {
   font-size: 0.95em;
-  color: #666;
-  margin-top: 5px;
+  line-height: 1.4;
 }
 
-/* Seção com links*/
+/* Links adicionais*/
 .link-section {
   text-align: center;
   margin: 40px 0;
 }
 
 .link-section a {
-  font-weight: bold;
+  display: inline-block;
   color: #0066cc;
   text-decoration: none;
-  font-size: 1em;
+  font-weight: bold;
+  margin: 10px;
+  transition: color 0.2s;
 }
 
 .link-section a:hover {
   color: #dd4a4a;
 }
 
-/* Rodapé */
-address {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 0.9em;
-  color: #444;
-  border-top: 1px solid #ccc;
-  padding-top: 15px;
-}
-
-/*-------------------*/
-
-header {
-  display: flex; 
-  flex-flow: row nowrap; 
-  justify-content: space-between; 
-  align-items: center;
-  height: 60px;
-  background-color: black;
-  padding: 0 20px;
-}
-header nav {
-  flex: 1;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-header nav > * {
-  flex-grow: 1;
-  text-align: center;
-}
-header h1 {
-  color: white;
-  font-size: 20px;    
-}
-header nav a {
-  color: white;
-  font-weight: bold;
-}
-header nav a:hover{
-  transform: scale(1.2);
-}
-header img {
-  height: 50px;
-}
-
-/*---------footer----------*/
-
+/* ==== Rodapé ==== */
 footer {
-  margin-top: 60px;
   text-align: center;
+  padding: 20px;
+  background-color: #fafafa;
   font-size: 0.9em;
-  color: #444;
-  border-top: 1px solid #ccc;
-  padding-top: 15px;
+  color: #777;
+  margin-top: 60px;
 }
+
+/* Centralização do conteúdo principal */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+#contato nav,
+aside nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#contato nav a,
+aside nav a {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #0066cc;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contato nav a:hover,
+aside nav a:hover {
+  color: #dd4a4a;
+}
+
